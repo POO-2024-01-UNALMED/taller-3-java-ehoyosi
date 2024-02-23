@@ -135,7 +135,7 @@ public class TV {
     	
     	if (estado == true && volumen > 0) {
     		
-    		volumen++;
+    		volumen--;
     	}
     	
     }
