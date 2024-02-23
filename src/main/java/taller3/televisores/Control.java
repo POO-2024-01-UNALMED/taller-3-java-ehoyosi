@@ -50,10 +50,9 @@ public class Control {
 		
 	}
     
-	public TV getTv(TV tv) {
+	public TV getTv() {
 		
-		return tv;
-		
+		return tv;	
 	}
 	
 	public void setTv(TV tv) {
