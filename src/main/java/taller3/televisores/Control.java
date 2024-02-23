@@ -6,69 +6,60 @@ public class Control {
 	
 	public void turnOn() {
 		
-		tv.estado = true;
+		tv.turnOn();
 	}
 	
 	public void turnOff() {
 		
-		tv.estado = false;
+		tv.turnOff();
 	}
 	
-public void canalUp() {
-    	
-    	if (tv.estado == true && tv.canal < 120) {
-    		
-    		tv.canal++;
-    	}
-    }
-    	 
-    public void canalDown() {
-    	
-    	if (tv.estado == true && tv.canal > 1 ) {
-    		
-    		tv.canal--;
-    	}
-    	
-    }
-    
-    public void volumenUp() {
-    	
-    	if (tv.estado == true && tv.volumen < 7) {
-    		
-    		tv.volumen++;
-    	}
-    	
-    }
-    
-    public void volumenDown() {
-    	
-    	if (tv.estado == true && tv.volumen > 0) {
-    		
-    		tv.volumen++;
-    	}
-}
-    
-    public void setCanal(int canal) {
+	public void volumenUp() {
 		
-		if (tv.estado == true && tv.canal >= 1 && tv.canal<=200) {
-			
-			tv.canal = canal;
-		}    
-}
-    
-    public void setVolumen(int volumen) {
+		tv.volumenUp();
+	}
+	
+	public void volumenDown() {
 		
-		if (tv.estado == true && tv.volumen >= 0 && tv.volumen <= 7) {
-			
-			tv.volumen = volumen;
-
-		}	
+		tv.volumenDown();
+	}
+	
+	public void canalUp() {
+		
+		tv.canalUp();
+	}
+	
+	public void canalDown() {
+		
+		tv.canalDown();
+	}
+	
+	public void setCanal(int num) {
+		
+		tv.setCanal(num);
+	}
+	
+	public void setVolumen(int num) {
+		
+		tv.setVolumen(num);
+	}
+	
+	public void enlazar(TV tele) {
+		
+		tv = tele;
 		
 	}
     
-
-
-
+	public TV getTv(TV tv) {
+		
+		return tv;
+		
+	}
+	
+	public void setTv(TV tv) {
+		
+		this.tv = tv;
+	}
 }
 
 
